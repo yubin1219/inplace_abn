@@ -19,7 +19,7 @@ def _activation_from_name(activation):
     elif activation == "identity":
         return _backend.Activation.Identity
     else:
-        pass
+        return None
 
 
 def _count_samples(x):
